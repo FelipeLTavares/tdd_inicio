@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TextField from "./components/Inputs/text";
+import masks from "./utils/masks";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div className="container">
+      <h2>Campo sem erro</h2>
+      <TextField placeholder="Nome" error />
+      <h2>Campo com erro</h2>
+      <TextField placeholder="Sobrenome" />
+      <h2>Campo com máscara de CPF</h2>
+      <TextField placeholder="CPF" mask={masks.cpf} />
+  </div>;
 }
 
 export default App;

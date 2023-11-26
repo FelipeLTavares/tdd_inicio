@@ -1,0 +1,27 @@
+  .input {
+    appearance: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Efeito de foco */
+  .input:focus {
+    border-color: #2196F3; /* Cor do Material UI para o foco */
+  }
+
+  .error {
+    font-size: 12px;
+    color: red;
+    margin: 0px;
+    margin-bottom: 8px;
+  }
